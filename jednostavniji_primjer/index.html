@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    </head>
+<body>
+
+
+<div id="vue-app">
+<h1>Bok {{name}}, ovo je primjer stranica</h1>
+<p>Reci mi svoje ime:</p>
+<input type="text" v-model="name">
+</div>
+
+
+<script>
+    var searchApp = new Vue({
+            el: '#vue-app',
+            data: {
+                name:"juan"
+            },
+        });
+
+</script>
+</body>
+</html>
